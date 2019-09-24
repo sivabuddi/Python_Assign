@@ -1,0 +1,13 @@
+1. Information about Outliers
+
+https://medium.com/datadriveninvestor/finding-outliers-in-dataset-using-python-efc3fce6ce32
+
+2. Procedure to identify outliers
+
+a) Arrange the data in increasing order.
+b) Calculate first(q1) and third quartile(q3)
+c) Find interquartile range (q3-q1)
+d) Find lower bound q1*1.5.
+e) Find upper bound q3*1.5.
+f) Anything that lies outside of lower and upper bound is an outlier.
+

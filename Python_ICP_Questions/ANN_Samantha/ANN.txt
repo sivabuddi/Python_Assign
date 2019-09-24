@@ -1,0 +1,36 @@
+Artificial Neural Networks:
+
+https://www.quora.com/What-is-the-transfer-function-in-Artificial-Neural-Networks
+
+https://towardsdatascience.com/activation-functions-and-its-types-which-is-better-a9a5310cc8f
+
+Significance of Transfer function or Activation Function:
+The transfer function, or activation function as it is more commonly called, is a monotonically increasing, 
+continuous, differentiable function, applied to the weighted input (or let's call it preliminary output) of a neuron
+ to produce the final output.
+
+Historically, a sigmoid function was used to mimic the observed behaviour of real neurons. Later it was discovered, 
+that this leads to the problem of vanishing gradients in deep neural networks. For this reason, the most widely used
+ activation function today is the rectifier, which is the identity function for all values greater than or equal to
+  0 and 0 for all negative values.
+
+The activation function is central to the idea of neural networks for two reasons:
+First, if there were no activation functions, the whole neural network could be reduced to a group of linear 
+function of the network input - one linear function for each output neuron. So, without activation functions,
+ a neural network could not learn non-linear relationships.
+ 
+And second, each neuron can be seen as recognising a certain feature, with an activation of 0 indicating the 
+absence of that feature. A negative value can't be interpreted in this framework (e.g. if the feature is, say, a 
+round shape, then a positive value indicates the strength with which the network believes that there is a round 
+shape and a value of 0 means, that there is no round shape. Obviously, there can't be less than no round shape.)
+
+
+Most popular Actiation functions
+https://towardsdatascience.com/activation-functions-and-its-types-which-is-better-a9a5310cc8f
+1) Sigmoid or Logistic (0 < x < 1)
+2) Tanh — Hyperbolic tangent (-1 < x < 1)
+3) ReLu -Rectified linear units
+
+It’s just that Sigmoid and Tanh should not be used nowadays due to the 
+vanishing Gradient Problem which causes a lots of problems to train,degrades the accuracy
+ and performance of a deep Neural Network Model.
