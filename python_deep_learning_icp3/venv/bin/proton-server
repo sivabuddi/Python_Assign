@@ -1,0 +1,10 @@
+#!/home/sivakumar/UMKC_PHD_INFO/Python_Assign/python_deep_learning_icp3/venv/bin/python
+# PBR Generated from 'console_scripts'
+
+import sys
+
+from gluon.cmd.api import main
+
+
+if __name__ == "__main__":
+    sys.exit(main())

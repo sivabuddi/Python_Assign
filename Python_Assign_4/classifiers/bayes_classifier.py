@@ -4,8 +4,6 @@ https://blog.sicara.com/naive-bayes-classifier-sklearn-python-example-tips-42d10
 """
 
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 import time
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB, BernoulliNB, MultinomialNB
@@ -17,6 +15,7 @@ gnb = GaussianNB()
 used_features = [
     "RI", "Na", "Mg", "Al", "Si", "K", "Ca", "Ba", "Fe"
 ]
+
 
 gnb.fit(
     X_train[used_features].values,

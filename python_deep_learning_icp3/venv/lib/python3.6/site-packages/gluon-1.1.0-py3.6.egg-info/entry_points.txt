@@ -1,0 +1,25 @@
+[console_scripts]
+gluon-api-tool = gluon.cmd.api_tool:main
+proton-server = gluon.cmd.api:main
+proton-shim-server = gluon.shim.main:main
+protonclient = gluon.cmd.cli:main
+
+[gluon.backends]
+net-l3vpn = gluon.backends.models.net_l3vpn:Provider
+
+[gluon.managers]
+net-l3vpn = gluon.managers.models.net_l3vpn:Provider
+
+[gluon.shim.backends]
+net-l3vpn-dummy = gluon.shim.backends.dummy_net_l3vpn:DummyNetL3VPN
+net-l3vpn-odl = gluon.shim.backends.opendaylight.odl_net_l3vpn:OdlNetL3VPN
+
+[gluon.shim.models]
+net-l3vpn = gluon.shim.api_models.net_l3vpn:ApiNetL3VPN
+
+[neutron.core_plugins]
+gluon = gluon.plugin.core:GluonPlugin
+
+[oslo.config.opts]
+gluon.conf = gluon.conf.opts:list_opts
+
